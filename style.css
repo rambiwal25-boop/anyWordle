@@ -1,27 +1,21 @@
-body {
-  margin: 0;
-  font-family: Arial;
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
-.container {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  color: white;
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
+.green { background: green; }
+.yellow { background: goldenrod; }
+.gray { background: gray; }
